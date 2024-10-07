@@ -8,16 +8,22 @@ import { Button } from './ui/button'
 
 const ToggleMode = () => {
   const { theme, setTheme } = useTheme()
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [mounted, setMounted] = useState(false)
+  
   useEffect(() => {
     setMounted(true)
   }, [])
+
+  if (!mounted) {
+    return null
+  }
+
   const dark = theme === 'dark'
 
   return (
     <Button
       variant='outline'
+      
       size='icon'
       onClick={() => setTheme(`${dark}` ? 'light' : 'dark')}
     >
