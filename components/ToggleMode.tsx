@@ -24,7 +24,7 @@ const ToggleMode = () => {
     <Button
       variant='outline'
       size='icon'
-      onClick={() => setTheme(`${dark}` ? 'light' : 'dark')}
+      onClick={() => setTheme(`${dark ? 'light' : 'dark'}`)}
     >
       {dark ? (
         <Sun className='hover:cursor-pointer hover:text-primary' />
