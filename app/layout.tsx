@@ -4,7 +4,7 @@ import MainNav from "@/components/MainNav"
 
 export const metadata: Metadata = {
   title: "TechTik",
-  description: "Technology ticking app using Next JS, Tailwind, Prisma and MySQL",
+  description: "Technology ticking app using Next JS, Tailwind, Shadcn-ui, Prisma and MySQL",
 }
 
 export default function RootLayout({
