@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import "./globals.css"
+import MainNav from "@/components/MainNav"
 
 export const metadata: Metadata = {
   title: "TechTik",
@@ -13,8 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-      >
+      <body>
+        <MainNav />
         {children}
       </body>
     </html>
