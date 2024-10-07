@@ -23,7 +23,6 @@ const ToggleMode = () => {
   return (
     <Button
       variant='outline'
-      
       size='icon'
       onClick={() => setTheme(`${dark}` ? 'light' : 'dark')}
     >
