@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
-import "./globals.css"
-import MainNav from "@/components/MainNav"
-import { ThemeProvider } from "@/components/theme-provider"
+import type { Metadata } from 'next'
+import './globals.css'
+import MainNav from '@/components/MainNav'
+import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
-  title: "TechTik",
-  description: "Technology ticking app using Next JS, Tailwind, Shadcn-ui, Prisma and MySQL",
+  title: 'TechTik',
+  description: 'Technology ticking app using Next JS, Tailwind, Shadcn-ui, Prisma and MySQL',
 }
 
 export default function RootLayout({
@@ -14,21 +14,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
         <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
+          attribute='class'
+          defaultTheme='dark'
           enableSystem
           disableTransitionOnChange
         >
-          <nav className="flex flex-col items-center border-b mb-5 px-5 py-3">
-            <div className="max-w-6xl w-full">
+          <nav className='flex flex-col items-center border-b mb-5 px-5 py-3'>
+            <div className='max-w-6xl w-full'>
               <MainNav />  
             </div>   
           </nav>
-          <main className="flex flex-col items-center">
-            <div className="max-w-6xl w-full">
+          <main className='flex flex-col items-center'>
+            <div className='max-w-6xl w-full'>
               {children}
             </div>
           </main>
